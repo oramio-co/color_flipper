@@ -1,8 +1,13 @@
+@import url("https://use.typekit.net/zft7xwb.css");
+
 html,
 body {
     margin: 0;
     padding: 0;
-    background-color: #f1f1f1;
+    background-color: #f1f5f8;
+    font-family: open-sans, sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 ul {
@@ -11,4 +16,70 @@ ul {
 
 a {
   text-decoration: none;
+  color: black;
+}
+
+.nav-center {
+  height: 4rem;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 4px 6px -4px #727171;
+}
+
+.title {
+  color: #5A9DB7;
+}
+
+.nav-links {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-links li {
+  margin-right: 5px;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  height: calc(100vh - 4rem - 4px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+}
+
+.splash {
+  width: 100%;
+  background-color: black;
+  color: white;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px -4px #727171;
+}
+
+.color {
+  color: #57ABDF; 
+}
+
+.btn {
+  width: 40%;
+  background: transparent;
+  font-size: 1.5rem;
+  padding: .5rem 1.5rem;
+  border: solid 2px black;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px -4px #727171;
+}
+
+.btn:hover {
+  background-color: rgba(170, 170, 170, 0.5); 
 }
