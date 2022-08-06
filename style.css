@@ -1,24 +1,40 @@
 @import url("https://use.typekit.net/zft7xwb.css");
 
+/* Remove initial padding and margin. Set default background color. */
 html,
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #f1f5f8;
-    font-family: open-sans, sans-serif;
-    font-weight: 700;
-    font-style: normal;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f5f8;
 }
 
+/* Set font to Open Sans. */
+body {
+  font-family: open-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Adjust body width at very large viewports. */
+@media screen and (min-width:900px) {
+  body {
+    width: 900px;
+    margin: 0 auto;
+  }
+}
+
+/* Remove default list dot decorations. */
 ul {
   list-style: none;
 }
 
+/* Remove default coloring on anchor links. */
 a {
   text-decoration: none;
   color: black;
 }
 
+/* Space title and nav links evenly. */ 
 .nav-center {
   height: 4rem;
   background-color: white;
@@ -39,35 +55,51 @@ a {
 }
 
 .nav-links li {
-  margin-right: 5px;
+  margin-left: 15px;
 }
 
+/* Adjust nav link size for larger viewports. */
+@media screen and (min-width: 600px) {
+  .nav-links {
+    width: 20%;
+  }
+}
+
+/* Add underline on mouseover of anchor links. */
 .nav-links li a:hover {
   text-decoration: underline;
 }
 
+/* Set main content to remaining height without overspill.
+ * Center text and button horizontally and vertically.
+ */
 .container {
-  height: calc(100vh - 4rem - 4px);
+  height: calc(100vh - 6rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  place-items: center;
+  align-items: center;
 }
 
 .splash {
-  width: 100%;
+  width: 90%;
   background-color: black;
   color: white;
-  height: 4rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
   border-radius: 6px;
   box-shadow: 0 4px 6px -4px #727171;
 }
 
+.splash p {
+  margin: 0;
+}
+
 .color {
-  color: #57ABDF; 
+  color: #57ABDF;
 }
 
 .btn {
@@ -80,6 +112,14 @@ a {
   box-shadow: 0 4px 6px -4px #727171;
 }
 
+/* Adjust size of button on larger viewports. */
+@media screen and (min-width: 600px){
+  .btn {
+    width: 25%;
+  }
+}
+
+/* Change background on mouseover of button for clarity. */
 .btn:hover {
   background-color: rgba(170, 170, 170, 0.5); 
 }
